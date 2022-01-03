@@ -89,86 +89,84 @@
                   * % Overall Passing" the overall passing percentage was slightly lower in the revised analysis from 65.2% to 64.9%
       
 
-#### The second objective is to prepare a revised school summary using the First, we must generate Using the Pandas DataFrame named school_data_complete_df from the original analysis, calculate the number of 10th-12th graders from Thomas High School (THS) using the following code:
-         'tenth_grade_count = school_data_complete_df.loc[(school_data_complete_df["school_name"] =="Thomas High School") & (school_data_complete_df["grade"] =="10th")].count()             ["grade"]'
-         'eleventh_grade_count = school_data_complete_df.loc[(school_data_complete_df["school_name"] =="Thomas High School") & (school_data_complete_df["grade"]                             =="11th")].count()["grade"]'
-         'twelfth_grade_count = school_data_complete_df.loc[(school_data_complete_df["school_name"] =="Thomas High School") & (school_data_complete_df["grade"]                              =="12th")].count()["grade"]
-         'ths_student_count = tenth_grade_count + eleventh_grade_count + twelfth_grade_count
+#### The second objective is to prepare a revised school summary using the clean data. 
+         First, we must generate Using the Pandas DataFrame named school_data_complete_df from the original analysis, calculate the number of 10th-12th graders from Thomas High          School (THS) using the following code:
+                  tenth_grade_count = school_data_complete_df.loc[(school_data_complete_df["school_name"] =="Thomas High School") & (school_data_complete_df["grade"]                                 =="10th")].count()["grade"]
+                  eleventh_grade_count = school_data_complete_df.loc[(school_data_complete_df["school_name"] =="Thomas High School") & (school_data_complete_df["grade"]                             =="11th")].count()["grade"]
+                  twelfth_grade_count = school_data_complete_df.loc[(school_data_complete_df["school_name"] =="Thomas High School") & (school_data_complete_df["grade"]                              =="12th")].count()["grade"]
+                  ths_student_count = tenth_grade_count + eleventh_grade_count + twelfth_grade_count
          
-#### Create three new variables for Thomas high school student performance
-         'ths_passing_math = school_data_complete_df.loc[(school_data_complete_df["school_name"] =="Thomas High School") & (school_data_complete_df["math_score"] >=70)]
-         'ths_passing_reading = school_data_complete_df.loc[(school_data_complete_df["school_name"] == "Thomas High School") & (school_data_complete_df["reading_score"] >=70)]
-         'ths_passing_math_reading = school_data_complete_df.loc[(school_data_complete_df["school_name"] == "Thomas High School") & (school_data_complete_df["math_score"] >=70)             & (school_data_complete_df["reading_score"] >=70)]'
+         Then, Create three new variables for Thomas high school student performance
+                  ths_passing_math = school_data_complete_df.loc[(school_data_complete_df["school_name"] =="Thomas High School") & (school_data_complete_df["math_score"] >=70)]
+                  ths_passing_reading = school_data_complete_df.loc[(school_data_complete_df["school_name"] == "Thomas High School") & (school_data_complete_df["reading_score"]                   >=70)]
+                  ths_passing_math_reading = school_data_complete_df.loc[(school_data_complete_df["school_name"] == "Thomas High School") &                                                         (school_data_complete_df["math_score"] >=70) & (school_data_complete_df["reading_score"] >=70)]'
          
-#### Calculate the percentage of 10th-12th grade students passing math, reading and both subjects from Thomas High School. 
+         Calculate the percentage of 10th-12th grade students passing math, reading and both subjects from Thomas High School. 
 
-ths_passing_math_count = school_data_complete_df[(school_data_complete_df["school_name"] =="Thomas High School") & (school_data_complete_df["math_score"] >=70)].count()["math_score"]
-ths_passing_math_percentage = ths_passing_math_count / ths_student_count  * 100
+                  ths_passing_math_count = school_data_complete_df[(school_data_complete_df["school_name"] =="Thomas High School") & (school_data_complete_df["math_score"]                         >=70)].count()["math_score"]
+                  ths_passing_math_percentage = ths_passing_math_count / ths_student_count  * 100
 
-ths_passing_reading_count = school_data_complete_df[(school_data_complete_df["school_name"] =="Thomas High School") & (school_data_complete_df["reading_score"] >=70)].count()["reading_score"]
-ths_passing_reading_percentage = ths_passing_reading_count / ths_student_count  * 100
+                  ths_passing_reading_count = school_data_complete_df[(school_data_complete_df["school_name"] =="Thomas High School") & (school_data_complete_df["reading_score"]                   >=70)].count()["reading_score"]
+                  ths_passing_reading_percentage = ths_passing_reading_count / ths_student_count  * 100
 
-ths_passing_math_reading_count = school_data_complete_df[(school_data_complete_df["school_name"] =="Thomas High School") & (school_data_complete_df["math_score"] >=70) & (school_data_complete_df["reading_score"] >=70) ].count()["math_score"]
-ths_passing_math_reading_count
+                  ths_passing_math_reading_count = school_data_complete_df[(school_data_complete_df["school_name"] =="Thomas High School") &                                                       (school_data_complete_df["math_score"] >=70) & (school_data_complete_df["reading_score"] >=70) ].count()["math_score"]
+                  ths_passing_math_reading_count
 
-ths_passing_overall_percentage = ths_passing_math_reading_count / ths_student_count  * 100
-ths_passing_overall_percentage
+                  ths_passing_overall_percentage = ths_passing_math_reading_count / ths_student_count  * 100
+                  ths_passing_overall_percentage
 
-Replace the passing math, reading and overaall percent for Thomas High School in the per_school_summary_df to compare to the original results. 
-per_school_summary_df = pd.DataFrame({
-             "School Type": per_school_types,
-             "Total Students": per_school_counts,
-             "Total School Budget": per_school_budget,
-             "Per Student Budget": per_school_capita,
-             "Average Math Score": per_school_math,
-           "Average Reading Score": per_school_reading,
-           "% Passing Math": ths_passing_math_percentage,
-           "% Passing Reading": ths_passing_reading_percentage,
-           "% Overall Passing": ths_passing_overall_percentage})
-per_school_summary_df
-snips of the data for Thomas high school are shown below: 
-![image](https://user-images.githubusercontent.com/94234511/147899814-d7119a76-8cf7-4323-a29d-be2eeec1ea0d.png)
-![image](https://user-images.githubusercontent.com/94234511/147899831-ec66b578-1948-4ea5-be5d-914cbfb25afa.png)
-![image](https://user-images.githubusercontent.com/94234511/147899847-73ef7f92-461b-4039-ae4e-c2c8ee5670cf.png)
-
-#### The results of the revised school summary can be compared ot the orignal analysis http://localhost:8888/notebooks/School_district_analysis2/PyCitySchools-Copy1.ipynb.
-![image](https://user-images.githubusercontent.com/94234511/147899894-80d44308-9e23-4686-b876-0b1e75ac7b59.png)
+         Replace the passing math, reading and overaall percent for Thomas High School in the per_school_summary_df to compare to the original results. 
+                  per_school_summary_df = pd.DataFrame({
+                           "School Type": per_school_types,
+                           "Total Students": per_school_counts,
+                           "Total School Budget": per_school_budget,
+                           "Per Student Budget": per_school_capita,
+                           "Average Math Score": per_school_math,
+                           "Average Reading Score": per_school_reading,
+                           "% Passing Math": ths_passing_math_percentage,
+                           "% Passing Reading": ths_passing_reading_percentage,
+                           "% Overall Passing": ths_passing_overall_percentage})
+                  per_school_summary_df
+         Replacing one variable at a time, screenshots of the data for Thomas high school are shown below: 
+                  ![image](https://user-images.githubusercontent.com/94234511/147899814-d7119a76-8cf7-4323-a29d-be2eeec1ea0d.png)
+                  ![image](https://user-images.githubusercontent.com/94234511/147899831-ec66b578-1948-4ea5-be5d-914cbfb25afa.png)
+                  ![image](https://user-images.githubusercontent.com/94234511/147899847-73ef7f92-461b-4039-ae4e-c2c8ee5670cf.png)
 
 ### **How is the school summary affected?**   
-        "School Type" 
-        "Total Students"
-        "Total School Budget"
-        "Per Student Budget"
-        "Average Math Score"
-        "Average Reading Score"
-        "% Passing Math": ths_passing_math_percentage,
-        "% Passing Reading": ths_passing_reading_percentage,
-        "% Overall Passing": ths_overall_passing_percentage})
+         The results of the revised school summary can be compared ot the orignal analysis http://localhost:8888/notebooks/School_district_analysis2/PyCitySchools-Copy1.ipynb.
+                  ![image](https://user-images.githubusercontent.com/94234511/147899894-80d44308-9e23-4686-b876-0b1e75ac7b59.png)
+
+        * School Type" 
+        * Total Students"
+        * Total School Budget"
+        * Per Student Budget"
+        * Average Math Score"
+        * Average Reading Score"
+        * % Passing Math": ths_passing_math_percentage,
+        * % Passing Reading": ths_passing_reading_percentage,
+        * % Overall Passing": ths_overall_passing_percentage})
 
 ### How does replacing the ninth graders’ math and reading scores affect Thomas High School’s performance relative to the other schools?
 
 ### How does replacing the ninth-grade scores affect the following:
-
   #### Math and reading scores by grade
+         **Math scores by grade**
+         Math Scores by grade were higher in the revised analysis, XX.X compared to XX.X after replacing the 9th grade scores
 
-**Math scores by grade**
-Math Scores by grade were higher in the revised analysis, XX.X compared to XX.X after replacing the 9th grade scores
+                  The original analysis of math scores by grade:
+                           ![image](https://user-images.githubusercontent.com/94234511/147907534-01858725-cece-4304-b3f0-cc327dcf167b.png)
 
-         The original analysis of math scores by grade:
-                  ![image](https://user-images.githubusercontent.com/94234511/147907534-01858725-cece-4304-b3f0-cc327dcf167b.png)
+                  The revised analysis:
+                           ![image](https://user-images.githubusercontent.com/94234511/147907449-c9b2e5e8-16c3-40fe-98b5-f652dc08c6c5.png)
 
-         The revised analysis:
-                  ![image](https://user-images.githubusercontent.com/94234511/147907449-c9b2e5e8-16c3-40fe-98b5-f652dc08c6c5.png)
+         **Reading scores by grade**
+         Reading Scores by grade were higher in the revised analysis, XX.X compared to XX.X after replacing the 9th grade scores
 
+                  The original analysis of reading scores by grade:
+                           ![image](https://user-images.githubusercontent.com/94234511/147907569-03a272fc-e0e6-44f1-b7d5-8a7ad58fbd81.png)
 
-**Reading scores by grade**
-Reading Scores by grade were higher in the revised analysis, XX.X compared to XX.X after replacing the 9th grade scores
-
-         The original analysis of reading scores by grade:
-                  ![image](https://user-images.githubusercontent.com/94234511/147907569-03a272fc-e0e6-44f1-b7d5-8a7ad58fbd81.png)
-
-         The revised analysis:
-                  ![image](https://user-images.githubusercontent.com/94234511/147907474-fd2d703e-81c6-4e8e-b58e-36ecce80c36d.png)
+                  The revised analysis:
+                           ![image](https://user-images.githubusercontent.com/94234511/147907474-fd2d703e-81c6-4e8e-b58e-36ecce80c36d.png)
 
  **Scores by school spending**
   The revised analysis of scores by school spending indicates that------        
@@ -192,6 +190,6 @@ Reading Scores by grade were higher in the revised analysis, XX.X compared to XX
                   ![image](https://user-images.githubusercontent.com/94234511/147900734-7ae801fe-e8c3-4985-8e5a-00be3c7b05bb.png)
 
          The revised analysis:
-                  ![image](https://user-images.githubusercontent.com/94234511/147907881-8dbd7f7a-5a9a-4c58-9b18-bb3f4ad11659.png)
-
+                  ![image](https://user-images.githubusercontent.com/94234511/147975258-27d213d4-9b67-44af-b7b2-ac4aba38f53d.png)
+                  
 ## Summary: Summarize four changes in the updated school district analysis after reading and math scores for the ninth grade at Thomas High School have been replaced with NaNs.
