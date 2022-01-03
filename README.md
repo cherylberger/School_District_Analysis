@@ -170,16 +170,15 @@ The revised analysis
   #### Scores by school spending
 The original analysis of scores by school spending is illustrated below:
 ![image](https://user-images.githubusercontent.com/94234511/147900878-c63683cf-3352-4c0c-b854-b6cdb02039dd.png)
-The revised analysis ![image](https://user-images.githubusercontent.com/94234511/147903424-80e3c44d-b4d4-49bc-b62c-208535a0d4dd.png)
+The revised analysis ![image](https://user-images.githubusercontent.com/94234511/147907696-c861c5ed-c5a0-4944-956d-271c3466d1b6.png)
   #### Scores by school size
 The original analysis of scores by school size is illustrated below: 
 ![image](https://user-images.githubusercontent.com/94234511/147900796-b8f3ada8-1bf8-49b8-9c78-a5b3794ac8fd.png)
-The revised analysis ![image](https://user-images.githubusercontent.com/94234511/147903395-70764203-d6d8-4301-ad09-1de1543c141d.png)
+The revised analysis ![image](https://user-images.githubusercontent.com/94234511/147907778-2e519778-c46d-4442-9d63-1ca9037a12e3.png)
 
   ### Scores by school type
 The original analysis of scores by type is illustrated below: 
 ![image](https://user-images.githubusercontent.com/94234511/147900734-7ae801fe-e8c3-4985-8e5a-00be3c7b05bb.png)
-The revised analysis ![image](https://user-images.githubusercontent.com/94234511/147903358-13621db1-b8b7-49fb-a3a1-64158cf285bc.png)
-
+The revised analysis ![image](https://user-images.githubusercontent.com/94234511/147907727-f7326f9e-ca47-46e2-b4bc-7d49c29e7e61.png)
 
 ## Summary: Summarize four changes in the updated school district analysis after reading and math scores for the ninth grade at Thomas High School have been replaced with NaNs.
