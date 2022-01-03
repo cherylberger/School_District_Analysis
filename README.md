@@ -153,18 +153,18 @@
          **Math scores by grade**
          Math Scores by grade were higher in the revised analysis, XX.X compared to XX.X after replacing the 9th grade scores
 
-                  The original analysis of math scores by grade:
-                           ![image](https://user-images.githubusercontent.com/94234511/147907534-01858725-cece-4304-b3f0-cc327dcf167b.png)
-
+                  The original analysis of math scores by grade
+                  ![image](https://user-images.githubusercontent.com/94234511/147907534-01858725-cece-4304-b3f0-cc327dcf167b.png)
+ ![image](https://user-images.githubusercontent.com/94234511/147907534-01858725-cece-4304-b3f0-cc327dcf167b.png)                 
                   The revised analysis:
-                           ![image](https://user-images.githubusercontent.com/94234511/147907449-c9b2e5e8-16c3-40fe-98b5-f652dc08c6c5.png)
-
+                           
+ ![image](https://user-images.githubusercontent.com/94234511/147907449-c9b2e5e8-16c3-40fe-98b5-f652dc08c6c5.png)
          **Reading scores by grade**
          Reading Scores by grade were higher in the revised analysis, XX.X compared to XX.X after replacing the 9th grade scores
 
                   The original analysis of reading scores by grade:
-                           ![image](https://user-images.githubusercontent.com/94234511/147907569-03a272fc-e0e6-44f1-b7d5-8a7ad58fbd81.png)
-
+                           
+![image](https://user-images.githubusercontent.com/94234511/147907569-03a272fc-e0e6-44f1-b7d5-8a7ad58fbd81.png)
                   The revised analysis:
                            ![image](https://user-images.githubusercontent.com/94234511/147907474-fd2d703e-81c6-4e8e-b58e-36ecce80c36d.png)
 
@@ -182,15 +182,14 @@
                   ![image](https://user-images.githubusercontent.com/94234511/147900796-b8f3ada8-1bf8-49b8-9c78-a5b3794ac8fd.png)
 
          The revised analysis: 
-                  ![image](https://user-images.githubusercontent.com/94234511/147976240-705c635a-e6d1-4e16-882d-9f3f26b0b499.png)
-
+![image](https://user-images.githubusercontent.com/94234511/147976881-5d1c404a-c4fd-4ada-ad78-b3259edd54fb.png)
+       
   **Scores by school type**
    The revised analysis of scores by school typr indicates that------       
          The original analysis of scores by type is illustrated below: 
                   ![image](https://user-images.githubusercontent.com/94234511/147900734-7ae801fe-e8c3-4985-8e5a-00be3c7b05bb.png)
 
          The revised analysis:
-                  ![image](https://user-images.githubusercontent.com/94234511/147976320-ae757c3d-91d8-42aa-80ab-f2c086e81839.png)
-
+ ![image](https://user-images.githubusercontent.com/94234511/147976320-ae757c3d-91d8-42aa-80ab-f2c086e81839.png)                 
                   
 ## Summary: Summarize four changes in the updated school district analysis after reading and math scores for the ninth grade at Thomas High School have been replaced with NaNs.
