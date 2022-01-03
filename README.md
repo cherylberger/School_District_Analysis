@@ -82,11 +82,11 @@
                   * The total number of schools analyzed remained constant at 15
                   * The total number of students was reduced by 461 (the number of 9th graders at Thomas High School) from 39,170 to 38,709
                   * Total Budget" The total budget was unchanged in the updated analysis at $24,649,428
-                  * Average Math Score" average math scores decreased from 81.9 to 78.9
-                  * Average Reading Score" average reading scores increased from 78.9 to 81.9
-                  * % Passing Math" the imapct to the passing math percentage was negligible from 74.9% to 74.8%
-                  * % Passing Reading" the impact to the passing reading percentage was also negligible from 85.8% to 85.7%
-                  * % Overall Passing" the overall passing percentage was slightly lower in the revised analysis from 65.2% to 64.9%
+                  * Average math scores decreased from 81.9 to 78.9
+                  * Average reading scores increased from 78.9 to 81.9
+                  * The imapct to the passing math percentage was negligible from 74.9% to 74.8%
+                  * The impact to the passing reading percentage was also negligible from 85.8% to 85.7%
+                  * The overall passing percentage was slightly lower in the revised analysis from 65.2% to 64.9%
       
 
 #### The second objective is to prepare a revised school summary using the clean data. 
@@ -137,19 +137,20 @@
 ![image](https://user-images.githubusercontent.com/94234511/147979984-d3ff3667-26b9-4815-a388-c40acc20fb86.png)
                   
          can be compared ot the orignal analysis http://localhost:8888/notebooks/School_district_analysis2/PyCitySchools-Copy1.ipynb.        
-![image](https://user-images.githubusercontent.com/94234511/147899894-80d44308-9e23-4686-b876-0b1e75ac7b59.png)
-
+![image](https://user-images.githubusercontent.com/94234511/147980565-6e3fc156-6229-41fe-938c-74eb32f7be5e.png)
+       
         * No impact to school type 
         * The total number of students was reduced from 39,170 to 38,709
         * The Total School Budget was unchanged
         * The Per Student Budget was unchanged
-        * Average Math Score"
-        * Average Reading Score"
-        * The % Passing Math decreased in the revised analysis from XX to XX
-        * The % Passing Reading increase slighly in the revised analysis from XX to XX
-        * The % Overall Passing overall was slighly lower in the revised analysis from xx to xx 
+        * Average Math Scores were reduced from 79 to 77 in the revised analysis
+        * Average Reading Score were slightly lower in the revised analysis 81& compared to 81.9% originally
+        * The % Passing Math was only mildly impacted, decreasing from 75 to 74.8%
+        * The % Passing Reading was slighly lower in the revised analysis from 85.8% to 85.7%
+        * The % Overall Passing overall was also slighly lower in the revised analysis from 65.2% to 64.9% 
 
 ### How does replacing the ninth graders’ math and reading scores affect Thomas High School’s performance relative to the other schools?
+The removal of 9th grade scores reduced the performance at Thomas High School compared to other schools. 
 
 ### How does replacing the ninth-grade scores affect the following:
   #### Math and reading scores by grade
@@ -198,7 +199,7 @@
                   
                   * The percentage passing reading was reduced from 97% to 91%
                   
-                  * the overall passign percentage was also reduced to 91% from 85%
+                  * the overall passing percentage was also reduced to 91% from 85%
                   
   **Scores by school type**
     The revised analysis of scores by school type had an impact but only for the charter schools.        
@@ -212,6 +213,11 @@
                   
                   * The percentage passing reading was reduced from 98% to 93%
                   
-                  * the overall passign percentage was also reduced to 87% from 90%
+                  * the overall passing percentage was also reduced to 87% from 90%
                   
 ## Summary: Summarize four changes in the updated school district analysis after reading and math scores for the ninth grade at Thomas High School have been replaced with NaNs.
+Removing the reading and math scores for the 9th graders at Thomas High School has the following impact on the updated school district analysis
+                  1. The overall Average math scores and average reading scores decreased however, the impact to the percentage passing each class was only marginally impacted                      due to the small sample size. 
+                  2.  The removal of 9th grade scores reduced the performance at Thomas High School compared to other schools.
+                  3.  The impact of the removal of the data for the 9th graders at Thomas high school had the largest impact on the categories evaluted in the school summary                       analysis.  For each category, school type, school size and budget per student categoy, a reduction in percentages of the passing math, passing reading and                       overall passing percentages was observed in the revised analysis suggesting that the 9th graders at Thomas High School scored high on both math and reading.                    Although cheating may or may not have occurred, results were negatively impacted by 3-6% in the school type, size and budget categories where Thomas High School                   9th grade student performance data was removed. 
+                
