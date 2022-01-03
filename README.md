@@ -51,7 +51,14 @@
 ### How is the district summary affected?
 #### The results of the revised district summary are displayed below: 
 ![image](https://user-images.githubusercontent.com/94234511/147898494-51b7b31a-640d-49c1-a3fd-03f911d4e138.png)
-#### When compared to the original analysis http://localhost:8888/notebooks/School_district_analysis2/PyCitySchools-Copy1.ipynb. The impact of the changes are summarized below: 
+
+#### When compared to the original analysis http://localhost:8888/notebooks/School_district_analysis2/PyCitySchools-Copy1.ipynb. 
+![image](https://user-images.githubusercontent.com/94234511/147899995-e5a421d5-307a-4c14-9b39-3b74c00bc513.png)
+
+# Assign district summary df the new column order.
+district_summary_df = district_summary_df[new_column_order]
+district_summary_df
+The impact of the changes are summarized below: 
       #### "Total Schools" The total number of schools analyzed remained constant at 15
       #### "Total Students" The total number of students was reduced by 461 (the number of 9th graders at Thomas High School) from 39,170 to 38,709
       ##### "Total Budget" The total budget was unchanged in the updated analysis at $24,649,428
@@ -72,8 +79,46 @@
 ####      twelfth_grade_count
 ####      ths_student_count = tenth_grade_count + eleventh_grade_count + twelfth_grade_count
 ####      ths_student_count
+ths_passing_math = school_data_complete_df.loc[(school_data_complete_df["school_name"] =="Thomas High School") & (school_data_complete_df["math_score"] >=70)]
+
+ths_passing_reading = school_data_complete_df.loc[(school_data_complete_df["school_name"] == "Thomas High School") & (school_data_complete_df["reading_score"] >=70)]
+
+ths_passing_math_reading = school_data_complete_df.loc[(school_data_complete_df["school_name"] == "Thomas High School") & (school_data_complete_df["math_score"] >=70) & (school_data_complete_df["reading_score"] >=70)]
+# Step 9. Calculate the percentage of 10th-12th grade students passing math from Thomas High School. 
+
+ths_passing_math_count = school_data_complete_df[(school_data_complete_df["school_name"] =="Thomas High School") & (school_data_complete_df["math_score"] >=70)].count()["math_score"]
+ths_passing_math_percentage = ths_passing_math_count / ths_student_count  * 100
+
+ths_passing_reading_count = school_data_complete_df[(school_data_complete_df["school_name"] =="Thomas High School") & (school_data_complete_df["reading_score"] >=70)].count()["reading_score"]
+
+ths_passing_reading_percentage = ths_passing_reading_count / ths_student_count  * 100
+
+ths_passing_math_reading_count = school_data_complete_df[(school_data_complete_df["school_name"] =="Thomas High School") & (school_data_complete_df["math_score"] >=70) & (school_data_complete_df["reading_score"] >=70) ].count()["math_score"]
+ths_passing_math_reading_count
+
+ths_passing_overall_percentage = ths_passing_math_reading_count / ths_student_count  * 100
+ths_passing_overall_percentage
+
+Replace the passing math, reading and overaall percent for Thomas High School in the per_school_summary_df to compare to the original results. 
+per_school_summary_df = pd.DataFrame({
+             "School Type": per_school_types,
+             "Total Students": per_school_counts,
+             "Total School Budget": per_school_budget,
+             "Per Student Budget": per_school_capita,
+             "Average Math Score": per_school_math,
+           "Average Reading Score": per_school_reading,
+           "% Passing Math": ths_passing_math_percentage,
+           "% Passing Reading": ths_passing_reading_percentage,
+           "% Overall Passing": ths_passing_overall_percentage})
+per_school_summary_df
+snips of the data for Thomas high school are shown below: 
+![image](https://user-images.githubusercontent.com/94234511/147899814-d7119a76-8cf7-4323-a29d-be2eeec1ea0d.png)
+![image](https://user-images.githubusercontent.com/94234511/147899831-ec66b578-1948-4ea5-be5d-914cbfb25afa.png)
+![image](https://user-images.githubusercontent.com/94234511/147899847-73ef7f92-461b-4039-ae4e-c2c8ee5670cf.png)
 
 #### The results of the revised school summary can be compared ot the orignal analysis http://localhost:8888/notebooks/School_district_analysis2/PyCitySchools-Copy1.ipynb.
+![image](https://user-images.githubusercontent.com/94234511/147899894-80d44308-9e23-4686-b876-0b1e75ac7b59.png)
+
 #### The impact of the changes are summarized below:       
         "School Type" 
         "Total Students"
