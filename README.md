@@ -72,12 +72,12 @@
                   district_summary_df'
       
 #### **How is the district summary affected?**
-         The results of the revised district summary are displayed below: 
-         ![image](https://user-images.githubusercontent.com/94234511/147903291-f4ef285b-4c08-4950-b2f5-98e8dd87117f.png)
-
-          the results of the original analysis http://localhost:8888/notebooks/School_district_analysis2/PyCitySchools-Copy1.ipynb can be seen below:
+         The results of the revised district summary are displayed below:
+          ![image](https://user-images.githubusercontent.com/94234511/147903291-f4ef285b-4c08-4950-b2f5-98e8dd87117f.png)
+  ![image](https://user-images.githubusercontent.com/94234511/147903291-f4ef285b-4c08-4950-b2f5-98e8dd87117f.png)              
+          The results of the original analysis http://localhost:8888/notebooks/School_district_analysis2/PyCitySchools-Copy1.ipynb can be seen below:
          ![image](https://user-images.githubusercontent.com/94234511/147903319-ddca75f8-f09b-44a2-85f4-faed390c4e04.png)
-
+![image](https://user-images.githubusercontent.com/94234511/147903319-ddca75f8-f09b-44a2-85f4-faed390c4e04.png)
          The impact of the changes are summarized below: 
                   * The total number of schools analyzed remained constant at 15
                   * The total number of students was reduced by 461 (the number of 9th graders at Thomas High School) from 39,170 to 38,709
@@ -172,8 +172,9 @@ The removal of 9th grade scores reduced the performance at Thomas High School co
 ![image](https://user-images.githubusercontent.com/94234511/147907569-03a272fc-e0e6-44f1-b7d5-8a7ad58fbd81.png)
                   
                   The revised analysis:
-                           ![image](https://user-images.githubusercontent.com/94234511/147907474-fd2d703e-81c6-4e8e-b58e-36ecce80c36d.png)
-
+                            
+  ![image](https://user-images.githubusercontent.com/94234511/147907474-fd2d703e-81c6-4e8e-b58e-36ecce80c36d.png)
+  
  **Scores by school spending**
   The impact of the removal of 9th grade data impacted school spending for the $630 - $644 category only.        
                   The original analysis of scores by school spending is illustrated below:
