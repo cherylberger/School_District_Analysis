@@ -20,7 +20,7 @@
 ### Combine the data into a new merged DataFrame and display the results 
 ####        'school_data_complete_df = pd.merge(student_data_df, school_data_df, how="left", on=["school_name", "school_name"])'
 ####        'school_data_complete_df.head()'
-### The new dataset contains all 39170 rows and 11 columns of data
+### The new dataset contains all 39170 rows and 11 columns of data but results for reading and math scores for 9th grade at Thomas High School are listed as NaN
 ####        ![image](https://user-images.githubusercontent.com/94234511/147896450-d1f8a109-cf19-4f2e-ba25-bde8e1068f0f.png)
 
 ### Create a district summary DataFrame to display the revised analysis
@@ -34,10 +34,8 @@
          "% Passing Reading": passing_reading_percentage,
         "% Overall Passing": overall_passing_percentage}])'
 
-#### Format the "Total Students" to have the comma for a thousands separator.
+#### Format the "Total Students" to have the comma for a thousands separator and Total Budget" to have the comma for a thousands separator, a decimal separator and a "$".
 #### 'district_summary_df["Total Students"] = district_summary_df["Total Students"].map("{:,}".format)'
-
-#### Format the "Total Budget" to have the comma for a thousands separator, a decimal separator and a "$".
 #### 'district_summary_df["Total Budget"] = district_summary_df["Total Budget"].map("${:,.2f}".format)
 
 #### Format the columns as indicated by the code below:
@@ -53,7 +51,7 @@
 ![image](https://user-images.githubusercontent.com/94234511/147898494-51b7b31a-640d-49c1-a3fd-03f911d4e138.png)
 
 #### When compared to the original analysis http://localhost:8888/notebooks/School_district_analysis2/PyCitySchools-Copy1.ipynb. 
-![image](https://user-images.githubusercontent.com/94234511/147899995-e5a421d5-307a-4c14-9b39-3b74c00bc513.png)
+![image](https://user-images.githubusercontent.com/94234511/147902621-2c2def7a-d920-4992-b352-8a6aae027d7b.png)
 
 # Assign district summary df the new column order.
 district_summary_df = district_summary_df[new_column_order]
@@ -135,6 +133,21 @@ snips of the data for Thomas high school are shown below:
 ### How does replacing the ninth-grade scores affect the following:
 
   #### Math and reading scores by grade
+
+Math scores by grade
+The original analysis of math scores by grade
+![image](https://user-images.githubusercontent.com/94234511/147901548-b3b77c01-44e2-4cd0-a9f0-7eb93793e681.png)
+
+The revised analysis
+![image](https://user-images.githubusercontent.com/94234511/147901416-258e44cf-ada0-4feb-a6b4-981cad5071a6.png)
+
+
+Reading scores by grade 
+The original analysis of reading scores by grade
+![image](https://user-images.githubusercontent.com/94234511/147901445-bf158ad4-75ac-40cc-aa29-dfdaa5618271.png)
+
+The revised analysis
+![image](https://user-images.githubusercontent.com/94234511/147901431-35f00eac-f861-4519-97c4-3e4c3ea57735.png)
 
   #### Scores by school spending
 The original analysis of scores by school spending is illustrated below:
