@@ -169,13 +169,16 @@
                            ![image](https://user-images.githubusercontent.com/94234511/147907474-fd2d703e-81c6-4e8e-b58e-36ecce80c36d.png)
 
  **Scores by school spending**
-  The revised analysis of scores by school spending indicates that------        
+  The impact of the removal of 9th grade data impacted school spending for the $630 - $644 category only.        
           The original analysis of scores by school spending is illustrated below:
                   ![image](https://user-images.githubusercontent.com/94234511/147900878-c63683cf-3352-4c0c-b854-b6cdb02039dd.png)
 
           The revised analysis 
    ![image](https://user-images.githubusercontent.com/94234511/147975718-7824eeda-ec77-45b5-b6d2-9d05affd8782.png)               
-  
+         * The percentage passing math was reduced from 73% to 67%
+         * The percentage passing reading was reduced from 84% to 77% 
+         * The percentage passing both math and reading also feel from 63% to 56%
+         
   **Scores by school size**
     The revised analysis of scores by school size indicates that------       
          The original analysis of scores by school size is illustrated below: 
@@ -185,11 +188,14 @@
 ![image](https://user-images.githubusercontent.com/94234511/147976881-5d1c404a-c4fd-4ada-ad78-b3259edd54fb.png)
        
   **Scores by school type**
-   The revised analysis of scores by school typr indicates that------       
+   
+   The revised analysis of scores by school type had an impact but only for the charter schools.        
          The original analysis of scores by type is illustrated below: 
                   ![image](https://user-images.githubusercontent.com/94234511/147900734-7ae801fe-e8c3-4985-8e5a-00be3c7b05bb.png)
 
          The revised analysis:
  ![image](https://user-images.githubusercontent.com/94234511/147976320-ae757c3d-91d8-42aa-80ab-f2c086e81839.png)                 
-                  
+                  * The percentage passing math was reduced from 94% to 90%
+                  * The percentage passing reading was reduced from 98% to 93%
+                  * the overall passign percentage was also reduced to 87% from 90%
 ## Summary: Summarize four changes in the updated school district analysis after reading and math scores for the ninth grade at Thomas High School have been replaced with NaNs.
