@@ -5,48 +5,48 @@
 #### After identifying the potential for academic dishonesty in the 9th grade class at Thomas High School, the school board has informed (employer) that the recent School District Analysis must be revised to include only data that complies with the standards.  Therefore, the purpose of this PyCity Schools analysis is to repeat the distict level summary of reading and math scores as well as the more discreet school level summary of reading and math performance within the disctrict.  The students_complete.csv file will be scrubbed to remove the data for math and reading scores for all 9th grade students at Thomas high school and a new analysis will be provided containing a summary of the impact on the overall analysis with these changes. 
 
 ## **Results:** 
-### In order to complete the project, the original data needed to be cleaned to remove the math and reading scores for the 9th grade students at Thomas High School. In order to prepare the data for reanalysis, load the dependencies for the analysis using jupyter notebook. 
-####        'import pandas as pd'
-####        'import numpy as np'
+### In order to complete the project, the original data needed to be cleaned to remove the math and reading scores for the 9th grade students at Thomas High School. 
+         First, prepare the data for reanalysis, load the dependencies for the analysis using jupyter notebook. 
+                import pandas as pd
+                import numpy as np
 
-### Read the School Data and Student Data and store into a Pandas DataFrame using the code steps below: 
-####        'school_data_df = pd.read_csv(school_data_to_load)'
-####        'student_data_df = pd.read_csv(student_data_to_load)'
+         Next, read the School Data and Student Data and store into a Pandas DataFrame using the code steps below: 
+                school_data_df = pd.read_csv(school_data_to_load)
+                student_data_df = pd.read_csv(student_data_to_load)
 
-### Replace the math & reading scores for all 9th grade students at Thomas high school in the student data DataFrame using the code below. The values for each index with be replaced with NaN which indicates not a number. 
-####        'student_data_df.loc[(student_data_df["school_name"] =="Thomas High School") & (student_data_df["grade"] =="9th"), "reading_score" ]=np.nan'
-####        'student_data_df.loc[(student_data_df["school_name"] == "Thomas High School") & (student_data_df["grade"] == "9th"), "math_score"]=np.nan'
-####        'student_data_df'
+         Then, Replace the math & reading scores for all 9th grade students at Thomas high school in the student data DataFrame using the code below. The values for each index with be replaced with NaN which indicates not a number. 
+                  student_data_df.loc[(student_data_df["school_name"] =="Thomas High School") & (student_data_df["grade"] =="9th"), "reading_score" ]=np.nan'
+                  student_data_df.loc[(student_data_df["school_name"] == "Thomas High School") & (student_data_df["grade"] == "9th"), "math_score"]=np.nan'
+                  student_data_df
 
-### Combine the data into a new merged DataFrame and display the results 
-####        'school_data_complete_df = pd.merge(student_data_df, school_data_df, how="left", on=["school_name", "school_name"])'
-####        'school_data_complete_df.head()'
+         Combine the data into a new merged DataFrame and display the results 
+                  school_data_complete_df = pd.merge(student_data_df, school_data_df, how="left", on=["school_name", "school_name"])
+                  school_data_complete_df.head()
 
-### The new dataset contains all 39170 rows and 11 columns of data but results for reading and math scores for 9th grade at Thomas High School are listed as NaN
-####        ![image](https://user-images.githubusercontent.com/94234511/147896450-d1f8a109-cf19-4f2e-ba25-bde8e1068f0f.png)
+         Finally, the new dataset contains all 39170 rows and 11 columns of data but results for reading and math scores for 9th grade at Thomas High School are listed as NaN
+                  ![image](https://user-images.githubusercontent.com/94234511/147896450-d1f8a109-cf19-4f2e-ba25-bde8e1068f0f.png)
 
 ### To compare the results of the analysis, calculate the new student count, the average math and readings scores as indicated in the code below:
-#### Step 1. Get the number of students that are in ninth grade at Thomas High School.
-ninth_grade_count = school_data_complete_df.loc[(school_data_complete_df["school_name"] =="Thomas High School") & (school_data_complete_df["grade"] =="9th")].count()["grade"]
-ninth_grade_count
-#### Get the total student count 
-student_count = school_data_complete_df["Student ID"].count()
-#### Step 2. Subtract the number of students that are in ninth grade at 
-#### Thomas High School from the total student count to get the new total student count.
-new_total_student_count = student_count - ninth_grade_count
-new_total_student_count
-#### Calculate the passing rates using the "clean_student_data".
-passing_math_count = school_data_complete_df[(school_data_complete_df["math_score"] >= 70)].count()["student_name"]
-passing_math_count
-passing_reading_count = school_data_complete_df[(school_data_complete_df["reading_score"] >= 70)].count()["student_name"]
-passing_reading_count
-#### Also calculate the percentage of students passing math, reading and both
-passing_math_percentage = passing_math_count / new_total_student_count * 100
-passing_math_percentage
-passing_reading_percentage = passing_reading_count / new_total_student_count * 100
-passing_reading_percentage
-overall_passing_percentage = overall_passing_math_reading_count / new_total_student_count * 100
-overall_passing_percentage
+         First, Get the number of students that are in ninth grade at Thomas High School.
+                  ninth_grade_count = school_data_complete_df.loc[(school_data_complete_df["school_name"] =="Thomas High School") & (school_data_complete_df["grade"]                                 =="9th")].count()["grade"]
+                  ninth_grade_count
+         Next, get the total student count 
+                  student_count = school_data_complete_df["Student ID"].count()
+         Subtract the number of students that are in ninth grade at Thomas High School from the total student count to get the new total student count.
+                  new_total_student_count = student_count - ninth_grade_count
+                  new_total_student_count
+         Calculate the passing rates using the "clean_student_data".
+                  passing_math_count = school_data_complete_df[(school_data_complete_df["math_score"] >= 70)].count()["student_name"]
+                  passing_math_count
+                  passing_reading_count = school_data_complete_df[(school_data_complete_df["reading_score"] >= 70)].count()["student_name"]
+                  passing_reading_count
+         Also calculate the percentage of students passing math, reading and both
+                  passing_math_percentage = passing_math_count / new_total_student_count * 100
+                  passing_math_percentage
+                  passing_reading_percentage = passing_reading_count / new_total_student_count * 100
+                  passing_reading_percentage
+                  overall_passing_percentage = overall_passing_math_reading_count / new_total_student_count * 100
+                  overall_passing_percentage
 
 ### Create a revised district summary DataFrame to display the revised analysis, note that the keys for each function match the recalculated variables.   
 #### 'district_summary_df = pd.DataFrame(
