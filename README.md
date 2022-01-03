@@ -3,8 +3,8 @@
 ## Cheryl Berger
 ###  After identifying the potential for academic dishonesty in the 9th grade class at Thomas High School, the school board has informed (employer) that the recent School District Analysis must be revised to include only data that complies with the standards.  Therefore, the purpose of this PyCity Schools analysis is to repeat the distict level summary of reading and math scores as well as the more discreet school level summary of reading and math performance within the disctrict.  The students_complete.csv file will be scrubbed to remove the data for math and reading scores for all 9th grade students at Thomas high school and a new analysis will be provided containing a summary of the impact on the overall analysis with these changes. 
 
-## Results: Using bulleted lists and images of DataFrames as support, address the following questions.
-### In order to prepare the data for reanalysis, load the dependencies for the analysis using jupyter notebook. 
+## Results: 
+### In order to complete the project, the original data needed to be cleaned to remove the math and reading scores for the 9th grade students at Thomas High School. In order to prepare the data for reanalysis, load the dependencies for the analysis using jupyter notebook. 
 ####        'import pandas as pd'
 ####        'import numpy as np'
 
@@ -23,7 +23,7 @@
 ### The new dataset contains all 39170 rows and 11 columns of data
 ####        ![image](https://user-images.githubusercontent.com/94234511/147896450-d1f8a109-cf19-4f2e-ba25-bde8e1068f0f.png)
 
-##### Create a district summary DataFrame to display the revised analysis
+### Create a district summary DataFrame to display the revised analysis
 #### 'district_summary_df = pd.DataFrame(
           [{"Total Schools": school_count, 
           "Total Students": student_count, 
@@ -49,17 +49,22 @@
       district_summary_df'
       
 ### How is the district summary affected?
+#### The results of the revised district summary are displayed below: 
+![image](https://user-images.githubusercontent.com/94234511/147898494-51b7b31a-640d-49c1-a3fd-03f911d4e138.png)
+#### When compared to the original analysis http://localhost:8888/notebooks/School_district_analysis2/PyCitySchools-Copy1.ipynb. The impact of the changes are summarized below: 
       #### "Total Schools" The total number of schools analyzed remained constant at 15
-      #### "Total Students" The total number of students was reduced by 461 from 39170 to 38709
+      #### "Total Students" The total number of students was reduced by 461 (the number of 9th graders at Thomas High School) from 39,170 to 38,709
       ##### "Total Budget" The total budget was unchanged in the updated analysis at $24,649,428
-      #### "Average Math Score" average math scores decreaded from 81.9 to 78.9
+      #### "Average Math Score" average math scores decreased from 81.9 to 78.9
       #### "Average Reading Score" average reading scores increased from 78.9 to 81.9
       #### "% Passing Math" the imapct to the passing math percentage was negligible from 74.9% to 74.8%
       #### "% Passing Reading" the impact to the passing reading percentage was also negligible from 85.8% to 85.7%
       #### "% Overall Passing" the overall passing percentage was slightly lower in the revised analysis from 65.2% to 64.9%
       
 #### How is the school summary affected?
-        "School Type"
+#### The results of the revised school summary can be compared ot the orignal analysis http://localhost:8888/notebooks/School_district_analysis2/PyCitySchools-Copy1.ipynb.
+#### The impact of the changes are summarized below:       
+        "School Type" 
         "Total Students"
         "Total School Budget"
         "Per Student Budget"
