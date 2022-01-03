@@ -22,23 +22,53 @@
 ####        'school_data_complete_df.head()'
 ### The new dataset contains all 39170 rows and 11 columns of data but results for reading and math scores for 9th grade at Thomas High School are listed as NaN
 ####        ![image](https://user-images.githubusercontent.com/94234511/147896450-d1f8a109-cf19-4f2e-ba25-bde8e1068f0f.png)
+### To compare the results of the analysis, calculate the new student count, the average math and readings scores as indicated in the code below:
+# Step 1. Get the number of students that are in ninth grade at Thomas High School.
+ninth_grade_count = school_data_complete_df.loc[(school_data_complete_df["school_name"] =="Thomas High School") & (school_data_complete_df["grade"] =="9th")].count()["grade"]
+ninth_grade_count
+# Get the total student count 
+student_count = school_data_complete_df["Student ID"].count()
 
-### Create a district summary DataFrame to display the revised analysis
+# Step 2. Subtract the number of students that are in ninth grade at 
+# Thomas High School from the total student count to get the new total student count.
+new_total_student_count = student_count - ninth_grade_count
+new_total_student_count
+
+# Calculate the passing rates using the "clean_student_data".
+passing_math_count = school_data_complete_df[(school_data_complete_df["math_score"] >= 70)].count()["student_name"]
+passing_math_count
+
+passing_reading_count = school_data_complete_df[(school_data_complete_df["reading_score"] >= 70)].count()["student_name"]
+passing_reading_count
+
+# Also calculate the percentage of students passing math, reading and both
+
+passing_math_percentage = passing_math_count / new_total_student_count * 100
+passing_math_percentage
+
+passing_reading_percentage = passing_reading_count / new_total_student_count * 100
+passing_reading_percentage
+
+overall_passing_percentage = overall_passing_math_reading_count / new_total_student_count * 100
+overall_passing_percentage
+
+### Create a revised district summary DataFrame to display the revised analysis, note that the keys for each function match the recalculated variables.   
 #### 'district_summary_df = pd.DataFrame(
+         district_summary_df = pd.DataFrame(
           [{"Total Schools": school_count, 
-          "Total Students": student_count, 
+          "Total Students": new_total_student_count, 
           "Total Budget": total_budget,
           "Average Math Score": average_math_score, 
           "Average Reading Score": average_reading_score,
           "% Passing Math": passing_math_percentage,
          "% Passing Reading": passing_reading_percentage,
-        "% Overall Passing": overall_passing_percentage}])'
+        "% Overall Passing": overall_passing_percentage}])
 
 #### Format the "Total Students" to have the comma for a thousands separator and Total Budget" to have the comma for a thousands separator, a decimal separator and a "$".
 #### 'district_summary_df["Total Students"] = district_summary_df["Total Students"].map("{:,}".format)'
 #### 'district_summary_df["Total Budget"] = district_summary_df["Total Budget"].map("${:,.2f}".format)
 
-#### Format the columns as indicated by the code below:
+#### Format the remaining columns as indicated by the code below:
 #### 'district_summary_df["Average Math Score"] = district_summary_df["Average Math Score"].map("{:.1f}".format)
       district_summary_df["Average Reading Score"] = district_summary_df["Average Reading Score"].map("{:.1f}".format)
       district_summary_df["% Passing Math"] = district_summary_df["% Passing Math"].map("{:.1f}".format)
@@ -48,10 +78,10 @@
       
 ### How is the district summary affected?
 #### The results of the revised district summary are displayed below: 
-![image](https://user-images.githubusercontent.com/94234511/147898494-51b7b31a-640d-49c1-a3fd-03f911d4e138.png)
+![image](https://user-images.githubusercontent.com/94234511/147903291-f4ef285b-4c08-4950-b2f5-98e8dd87117f.png)
 
 #### When compared to the original analysis http://localhost:8888/notebooks/School_district_analysis2/PyCitySchools-Copy1.ipynb. 
-![image](https://user-images.githubusercontent.com/94234511/147902621-2c2def7a-d920-4992-b352-8a6aae027d7b.png)
+![image](https://user-images.githubusercontent.com/94234511/147903319-ddca75f8-f09b-44a2-85f4-faed390c4e04.png)
 
 # Assign district summary df the new column order.
 district_summary_df = district_summary_df[new_column_order]
@@ -139,7 +169,7 @@ The original analysis of math scores by grade
 ![image](https://user-images.githubusercontent.com/94234511/147901548-b3b77c01-44e2-4cd0-a9f0-7eb93793e681.png)
 
 The revised analysis
-![image](https://user-images.githubusercontent.com/94234511/147901416-258e44cf-ada0-4feb-a6b4-981cad5071a6.png)
+![image](https://user-images.githubusercontent.com/94234511/147903471-de5acc24-a108-41e9-aa84-d517988b53db.png)
 
 
 Reading scores by grade 
@@ -147,22 +177,21 @@ The original analysis of reading scores by grade
 ![image](https://user-images.githubusercontent.com/94234511/147901445-bf158ad4-75ac-40cc-aa29-dfdaa5618271.png)
 
 The revised analysis
-![image](https://user-images.githubusercontent.com/94234511/147901431-35f00eac-f861-4519-97c4-3e4c3ea57735.png)
+![image](https://user-images.githubusercontent.com/94234511/147903452-db089bf5-3f6f-4eb6-be6e-d5d0a43ce1de.png)
 
   #### Scores by school spending
 The original analysis of scores by school spending is illustrated below:
 ![image](https://user-images.githubusercontent.com/94234511/147900878-c63683cf-3352-4c0c-b854-b6cdb02039dd.png)
-The revised analysis ![image](https://user-images.githubusercontent.com/94234511/147900854-c78d17df-e44c-40d6-862b-3335b35ae308.png)
-
+The revised analysis ![image](https://user-images.githubusercontent.com/94234511/147903424-80e3c44d-b4d4-49bc-b62c-208535a0d4dd.png)
   #### Scores by school size
 The original analysis of scores by school size is illustrated below: 
 ![image](https://user-images.githubusercontent.com/94234511/147900796-b8f3ada8-1bf8-49b8-9c78-a5b3794ac8fd.png)
-The revised analysis ![image](https://user-images.githubusercontent.com/94234511/147900816-147e262c-d4f6-42df-b3e8-d225da4d8d64.png)
+The revised analysis ![image](https://user-images.githubusercontent.com/94234511/147903395-70764203-d6d8-4301-ad09-1de1543c141d.png)
 
   ### Scores by school type
 The original analysis of scores by type is illustrated below: 
 ![image](https://user-images.githubusercontent.com/94234511/147900734-7ae801fe-e8c3-4985-8e5a-00be3c7b05bb.png)
-The revised analysis ![image](https://user-images.githubusercontent.com/94234511/147900757-f63c1931-792d-4834-a72f-f78f1c134d89.png)
+The revised analysis ![image](https://user-images.githubusercontent.com/94234511/147903358-13621db1-b8b7-49fb-a3a1-64158cf285bc.png)
 
 
 ## Summary: Summarize four changes in the updated school district analysis after reading and math scores for the ninth grade at Thomas High School have been replaced with NaNs.
