@@ -153,8 +153,7 @@
 The removal of 9th grade scores reduced the performance at Thomas High School compared to other schools. 
 
 ### How does replacing the ninth-grade scores affect the following:
-  #### Math and reading scores by grade
-         **Math scores by grade**
+ **Math scores by grade**
          Math Scores by grade were higher in the revised analysis, XX.X compared to XX.X after replacing the 9th grade scores
 
                   The original analysis of math scores by grade
@@ -164,7 +163,8 @@ The removal of 9th grade scores reduced the performance at Thomas High School co
                           
  ![image](https://user-images.githubusercontent.com/94234511/147907449-c9b2e5e8-16c3-40fe-98b5-f652dc08c6c5.png)
  
-         **Reading scores by grade**
+         
+ **Reading scores by grade**
          Reading Scores by grade were higher in the revised analysis, XX.X compared to XX.X after replacing the 9th grade scores
 
                   The original analysis of reading scores by grade:
@@ -217,7 +217,10 @@ The removal of 9th grade scores reduced the performance at Thomas High School co
                   
 ## Summary: Summarize four changes in the updated school district analysis after reading and math scores for the ninth grade at Thomas High School have been replaced with NaNs.
 Removing the reading and math scores for the 9th graders at Thomas High School has the following impact on the updated school district analysis
+
                   1. The overall Average math scores and average reading scores decreased however, the impact to the percentage passing each class was only marginally impacted                      due to the small sample size. 
+                  
                   2.  The removal of 9th grade scores reduced the performance at Thomas High School compared to other schools.
+                  
                   3.  The impact of the removal of the data for the 9th graders at Thomas high school had the largest impact on the categories evaluted in the school summary                       analysis.  For each category, school type, school size and budget per student categoy, a reduction in percentages of the passing math, passing reading and                       overall passing percentages was observed in the revised analysis suggesting that the 9th graders at Thomas High School scored high on both math and reading.                    Although cheating may or may not have occurred, results were negatively impacted by 3-6% in the school type, size and budget categories where Thomas High School                   9th grade student performance data was removed. 
                 
