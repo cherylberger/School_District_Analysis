@@ -2,7 +2,7 @@
 ## **School District Analysis **        -             *Data Analytics Module 4 Pandas*         
 #### Cheryl Berger
 ###  **Project Overview**
-#### After identifying the potential for academic dishonesty in the 9th grade class at Thomas High School, the school board has informed (employer) that the recent School District Analysis must be revised to include only data that complies with the standards.  Therefore, the purpose of this PyCity Schools analysis is to repeat the distict level summary of reading and math scores as well as the more discreet school level summary of reading and math performance within the disctrict.  The students_complete.csv file will be scrubbed to remove the data for math and reading scores for all 9th grade students at Thomas high school and a new analysis will be provided containing a summary of the impact on the overall analysis with these changes. 
+#### After identifying the potential for academic dishonesty in the 9th grade class at Thomas High School, the school board has informed V. Isualize that the recent School District Analysis must be revised to include only data that complies with the standards.  Therefore, the purpose of this PyCity Schools analysis is to repeat the distict level summary of reading and math scores as well as the more discreet school level summary of reading and math performance within the disctrict.  The students_complete.csv file will be scrubbed to remove the data for math and reading scores for all 9th grade students at Thomas high school and a new analysis will be provided containing a summary of the impact on the overall analysis with these changes. 
 
 ### **Results:** 
 #### In order to complete the project, the original data needed to be cleaned to remove the math and reading scores for the 9th grade students at Thomas High School. 
@@ -154,11 +154,12 @@
          Math Scores by grade were higher in the revised analysis, XX.X compared to XX.X after replacing the 9th grade scores
 
                   The original analysis of math scores by grade
-                  ![image](https://user-images.githubusercontent.com/94234511/147907534-01858725-cece-4304-b3f0-cc327dcf167b.png)
- ![image](https://user-images.githubusercontent.com/94234511/147907534-01858725-cece-4304-b3f0-cc327dcf167b.png)                 
+![image](https://user-images.githubusercontent.com/94234511/147907534-01858725-cece-4304-b3f0-cc327dcf167b.png)                  
+                  
                   The revised analysis:
-                           
+                          
  ![image](https://user-images.githubusercontent.com/94234511/147907449-c9b2e5e8-16c3-40fe-98b5-f652dc08c6c5.png)
+ 
          **Reading scores by grade**
          Reading Scores by grade were higher in the revised analysis, XX.X compared to XX.X after replacing the 9th grade scores
 
@@ -174,19 +175,27 @@
                   ![image](https://user-images.githubusercontent.com/94234511/147900878-c63683cf-3352-4c0c-b854-b6cdb02039dd.png)
 
           The revised analysis 
-   ![image](https://user-images.githubusercontent.com/94234511/147975718-7824eeda-ec77-45b5-b6d2-9d05affd8782.png)               
-         * The percentage passing math was reduced from 73% to 67%
-         * The percentage passing reading was reduced from 84% to 77% 
-         * The percentage passing both math and reading also feel from 63% to 56%
+   ![image](https://user-images.githubusercontent.com/94234511/147975718-7824eeda-ec77-45b5-b6d2-9d05affd8782.png)
+   
+                  * The percentage passing math was reduced from 73% to 67%
+                  
+                  * The percentage passing reading was reduced from 84% to 77% 
+                  
+                  * The percentage passing both math and reading also feel from 63% to 56%
          
   **Scores by school size**
-    The revised analysis of scores by school size indicates that------       
+    The revised analysis of scores by school size indicates that only medium size schools were impacted       
          The original analysis of scores by school size is illustrated below: 
                   ![image](https://user-images.githubusercontent.com/94234511/147900796-b8f3ada8-1bf8-49b8-9c78-a5b3794ac8fd.png)
 
          The revised analysis: 
 ![image](https://user-images.githubusercontent.com/94234511/147976881-5d1c404a-c4fd-4ada-ad78-b3259edd54fb.png)
-       
+
+                  * The percentage passing math was reduced from 94% to 88%
+                  
+                  * The percentage passing reading was reduced from 97% to 91%
+                  
+                  * the overall passign percentage was also reduced to 91% from 85%
   **Scores by school type**
    
    The revised analysis of scores by school type had an impact but only for the charter schools.        
@@ -196,6 +205,9 @@
          The revised analysis:
  ![image](https://user-images.githubusercontent.com/94234511/147976320-ae757c3d-91d8-42aa-80ab-f2c086e81839.png)                 
                   * The percentage passing math was reduced from 94% to 90%
+                  
                   * The percentage passing reading was reduced from 98% to 93%
+                  
                   * the overall passign percentage was also reduced to 87% from 90%
+                  
 ## Summary: Summarize four changes in the updated school district analysis after reading and math scores for the ninth grade at Thomas High School have been replaced with NaNs.
