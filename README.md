@@ -134,17 +134,18 @@
 
 ### **How is the school summary affected?**   
          The results of the revised school summary can be compared ot the orignal analysis http://localhost:8888/notebooks/School_district_analysis2/PyCitySchools-Copy1.ipynb.
-                  ![image](https://user-images.githubusercontent.com/94234511/147899894-80d44308-9e23-4686-b876-0b1e75ac7b59.png)
+                  
+![image](https://user-images.githubusercontent.com/94234511/147899894-80d44308-9e23-4686-b876-0b1e75ac7b59.png)
 
-        * School Type" 
-        * Total Students"
-        * Total School Budget"
-        * Per Student Budget"
+        * No impact to school type 
+        * The total number of students was reduced from 39,170 to 38,709
+        * The Total School Budget was unchanged
+        * The Per Student Budget was unchanged
         * Average Math Score"
         * Average Reading Score"
-        * % Passing Math": ths_passing_math_percentage,
-        * % Passing Reading": ths_passing_reading_percentage,
-        * % Overall Passing": ths_overall_passing_percentage})
+        * The % Passing Math decreased in the revised analysis from XX to XX
+        * The % Passing Reading increase slighly in the revised analysis from XX to XX
+        * The % Overall Passing overall was slighly lower in the revised analysis from xx to xx 
 
 ### How does replacing the ninth graders’ math and reading scores affect Thomas High School’s performance relative to the other schools?
 
