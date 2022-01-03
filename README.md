@@ -170,15 +170,16 @@ The removal of 9th grade scores reduced the performance at Thomas High School co
                   The original analysis of reading scores by grade:
                            
 ![image](https://user-images.githubusercontent.com/94234511/147907569-03a272fc-e0e6-44f1-b7d5-8a7ad58fbd81.png)
+                  
                   The revised analysis:
                            ![image](https://user-images.githubusercontent.com/94234511/147907474-fd2d703e-81c6-4e8e-b58e-36ecce80c36d.png)
 
  **Scores by school spending**
   The impact of the removal of 9th grade data impacted school spending for the $630 - $644 category only.        
-          The original analysis of scores by school spending is illustrated below:
+                  The original analysis of scores by school spending is illustrated below:
                   ![image](https://user-images.githubusercontent.com/94234511/147900878-c63683cf-3352-4c0c-b854-b6cdb02039dd.png)
 
-          The revised analysis 
+                  The revised analysis 
    ![image](https://user-images.githubusercontent.com/94234511/147975718-7824eeda-ec77-45b5-b6d2-9d05affd8782.png)
    
                   * The percentage passing math was reduced from 73% to 67%
@@ -189,11 +190,13 @@ The removal of 9th grade scores reduced the performance at Thomas High School co
          
   **Scores by school size**
     The revised analysis of scores by school size indicates that only medium size schools were impacted       
-         The original analysis of scores by school size is illustrated below: 
-                  ![image](https://user-images.githubusercontent.com/94234511/147900796-b8f3ada8-1bf8-49b8-9c78-a5b3794ac8fd.png)
+         
+                  The original analysis of scores by school size is illustrated below: 
+                         
+![image](https://user-images.githubusercontent.com/94234511/147900796-b8f3ada8-1bf8-49b8-9c78-a5b3794ac8fd.png)
 
-         The revised analysis: 
-![image](https://user-images.githubusercontent.com/94234511/147976881-5d1c404a-c4fd-4ada-ad78-b3259edd54fb.png)
+                  The revised analysis: 
+         ![image](https://user-images.githubusercontent.com/94234511/147976881-5d1c404a-c4fd-4ada-ad78-b3259edd54fb.png)
 
                   * The percentage passing math was reduced from 94% to 88%
                   
