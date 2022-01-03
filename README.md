@@ -62,6 +62,17 @@
       #### "% Overall Passing" the overall passing percentage was slightly lower in the revised analysis from 65.2% to 64.9%
       
 #### How is the school summary affected?
+
+#### Using the Pandas DataFrame named school_data_complete_df from the original analysis, ![image](https://user-images.githubusercontent.com/94234511/147898895-3ee10eed-eaab-#### 40ed-a2e9-42a8a24fdef4.png) calculate the number of 10th-12th graders from Thomas High School (THS) using the following code:
+####      'tenth_grade_count = school_data_complete_df.loc[(school_data_complete_df["school_name"] =="Thomas High School") & (school_data_complete_df["grade"] =="10th")].count()["grade"]'
+####      'tenth_grade_count'
+####      'eleventh_grade_count = school_data_complete_df.loc[(school_data_complete_df["school_name"] =="Thomas High School") & (school_data_complete_df["grade"] =="11th")].count()["grade"]'
+####      eleventh_grade_count
+####      twelfth_grade_count = school_data_complete_df.loc[(school_data_complete_df["school_name"] =="Thomas High School") & (school_data_complete_df["grade"] =="12th")].count()["grade"]'
+####      twelfth_grade_count
+####      ths_student_count = tenth_grade_count + eleventh_grade_count + twelfth_grade_count
+####      ths_student_count
+
 #### The results of the revised school summary can be compared ot the orignal analysis http://localhost:8888/notebooks/School_district_analysis2/PyCitySchools-Copy1.ipynb.
 #### The impact of the changes are summarized below:       
         "School Type" 
