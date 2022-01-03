@@ -133,8 +133,10 @@
                   ![image](https://user-images.githubusercontent.com/94234511/147899847-73ef7f92-461b-4039-ae4e-c2c8ee5670cf.png)
 
 ### **How is the school summary affected?**   
-         The results of the revised school summary can be compared ot the orignal analysis http://localhost:8888/notebooks/School_district_analysis2/PyCitySchools-Copy1.ipynb.
+         The results of the revised school summary 
+![image](https://user-images.githubusercontent.com/94234511/147979984-d3ff3667-26b9-4815-a388-c40acc20fb86.png)
                   
+         can be compared ot the orignal analysis http://localhost:8888/notebooks/School_district_analysis2/PyCitySchools-Copy1.ipynb.        
 ![image](https://user-images.githubusercontent.com/94234511/147899894-80d44308-9e23-4686-b876-0b1e75ac7b59.png)
 
         * No impact to school type 
