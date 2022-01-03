@@ -174,7 +174,7 @@
                   ![image](https://user-images.githubusercontent.com/94234511/147900878-c63683cf-3352-4c0c-b854-b6cdb02039dd.png)
 
           The revised analysis 
-                  ![image](https://user-images.githubusercontent.com/94234511/147907696-c861c5ed-c5a0-4944-956d-271c3466d1b6.png)
+                  ![image](https://user-images.githubusercontent.com/94234511/147975718-7824eeda-ec77-45b5-b6d2-9d05affd8782.png)
   
   **Scores by school size**
     The revised analysis of scores by school size indicates that------       
@@ -182,7 +182,7 @@
                   ![image](https://user-images.githubusercontent.com/94234511/147900796-b8f3ada8-1bf8-49b8-9c78-a5b3794ac8fd.png)
 
          The revised analysis: 
-                  ![image](https://user-images.githubusercontent.com/94234511/147907778-2e519778-c46d-4442-9d63-1ca9037a12e3.png)
+  ![image](https://user-images.githubusercontent.com/94234511/147975639-7b77fc2d-a021-49a8-91c9-2e4818169fab.png)
 
   **Scores by school type**
    The revised analysis of scores by school typr indicates that------       
