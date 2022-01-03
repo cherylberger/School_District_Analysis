@@ -196,14 +196,15 @@
                   * The percentage passing reading was reduced from 97% to 91%
                   
                   * the overall passign percentage was also reduced to 91% from 85%
+                  
   **Scores by school type**
-   
-   The revised analysis of scores by school type had an impact but only for the charter schools.        
+    The revised analysis of scores by school type had an impact but only for the charter schools.        
          The original analysis of scores by type is illustrated below: 
                   ![image](https://user-images.githubusercontent.com/94234511/147900734-7ae801fe-e8c3-4985-8e5a-00be3c7b05bb.png)
 
          The revised analysis:
- ![image](https://user-images.githubusercontent.com/94234511/147976320-ae757c3d-91d8-42aa-80ab-f2c086e81839.png)                 
+ ![image](https://user-images.githubusercontent.com/94234511/147976320-ae757c3d-91d8-42aa-80ab-f2c086e81839.png)
+ 
                   * The percentage passing math was reduced from 94% to 90%
                   
                   * The percentage passing reading was reduced from 98% to 93%
